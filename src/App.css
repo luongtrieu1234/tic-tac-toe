@@ -1,0 +1,84 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 60px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.square.winning {
+  background: #5bcc0b;
+  color: #fff;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.game-info li {
+  font-size: 16px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info button {
+  margin: 5px;
+  padding: 5px 10px;
+  background: #0074d9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.game-info button:hover {
+  background: #0056b3;
+}
+
+.game-info button:focus {
+  outline: none;
+}
+
+.game-info button:disabled {
+  background: #ddd;
+  color: #777;
+  cursor: not-allowed;
+}
+.game-info span {
+  font-weight: bold; /* Make it bold */
+  margin-right: 10px; /* Add some space to the right of the span */
+}
